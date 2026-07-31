@@ -1,0 +1,374 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Andreyas Ayub, UET Lahore, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.163.4.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+E:\Semester 4\ES-1\Project\2023_ES_SmesterProject_09_B\uVision_Keil_Project_09\uVision_Keil_Project_09.uvprojx
+Project File Date:  05/15/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'TM4C123GH6PM'
+compiling uVision_Keil_Project_09.c...
+uVision_Keil_Project_09.c(51): warning: no previous extern declaration for non-static variable 'countA' [-Wmissing-variable-declarations]
+volatile uint32_t countA = 0, countB = 0, countC = 0;
+                  ^
+uVision_Keil_Project_09.c(51): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint32_t countA = 0, countB = 0, countC = 0;
+         ^
+uVision_Keil_Project_09.c(51): warning: no previous extern declaration for non-static variable 'countB' [-Wmissing-variable-declarations]
+volatile uint32_t countA = 0, countB = 0, countC = 0;
+                              ^
+uVision_Keil_Project_09.c(51): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint32_t countA = 0, countB = 0, countC = 0;
+         ^
+uVision_Keil_Project_09.c(51): warning: no previous extern declaration for non-static variable 'countC' [-Wmissing-variable-declarations]
+volatile uint32_t countA = 0, countB = 0, countC = 0;
+                                          ^
+uVision_Keil_Project_09.c(51): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint32_t countA = 0, countB = 0, countC = 0;
+         ^
+uVision_Keil_Project_09.c(52): warning: no previous extern declaration for non-static variable 'motorRunning' [-Wmissing-variable-declarations]
+volatile uint8_t motorRunning = 0;
+                 ^
+uVision_Keil_Project_09.c(52): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint8_t motorRunning = 0;
+         ^
+uVision_Keil_Project_09.c(53): warning: no previous extern declaration for non-static variable 'emergencyFlag' [-Wmissing-variable-declarations]
+volatile uint8_t emergencyFlag = 0;
+                 ^
+uVision_Keil_Project_09.c(53): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint8_t emergencyFlag = 0;
+         ^
+uVision_Keil_Project_09.c(54): warning: no previous extern declaration for non-static variable 'sensorD_count' [-Wmissing-variable-declarations]
+volatile uint8_t sensorD_count = 0;
+                 ^
+uVision_Keil_Project_09.c(54): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint8_t sensorD_count = 0;
+         ^
+uVision_Keil_Project_09.c(55): warning: no previous extern declaration for non-static variable 'sensorD_interrupt' [-Wmissing-variable-declarations]
+volatile uint8_t sensorD_interrupt = 0;
+                 ^
+uVision_Keil_Project_09.c(55): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint8_t sensorD_interrupt = 0;
+         ^
+uVision_Keil_Project_09.c(56): warning: no previous extern declaration for non-static variable 'motorStarted' [-Wmissing-variable-declarations]
+volatile uint8_t motorStarted = 0;
+                 ^
+uVision_Keil_Project_09.c(56): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint8_t motorStarted = 0;
+         ^
+uVision_Keil_Project_09.c(60): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void LCD_Init();
+             ^
+              void
+uVision_Keil_Project_09.c(65): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void LCD_UpdateCounts();
+                     ^
+                      void
+uVision_Keil_Project_09.c(66): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void Stepper_Init();
+                 ^
+                  void
+uVision_Keil_Project_09.c(67): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void Stepper_Step();
+                 ^
+                  void
+uVision_Keil_Project_09.c(68): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void Motor_On();
+             ^
+              void
+uVision_Keil_Project_09.c(69): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void Motor_Off();
+              ^
+               void
+uVision_Keil_Project_09.c(70): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void HandleEmergencyStop();
+                        ^
+                         void
+uVision_Keil_Project_09.c(79): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIO_PORTA_DIR_R &= ~(SENSOR_A | SENSOR_B | SENSOR_C | SENSOR_D);
+                     ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+uVision_Keil_Project_09.c(94): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIO_PORTD_AFSEL_R &= ~(MOTOR_PUL | MOTOR_DIR);
+                       ~~ ^~~~~~~~~~~~~~~~~~~~~~~~
+uVision_Keil_Project_09.c(117): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                    GPIO_PORTC_DATA_R &= ~YELLOW_LED;
+                                      ~~ ^~~~~~~~~~~
+uVision_Keil_Project_09.c(134): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            GPIO_PORTC_DATA_R &= ~RED_LED;
+                              ~~ ^~~~~~~~
+uVision_Keil_Project_09.c(180): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIO_PORTF_DIR_R &= ~EMERGENCY_STOP_PIN;
+                     ~~ ^~~~~~~~~~~~~~~~~~~
+uVision_Keil_Project_09.c(192): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIO_PORTC_DATA_R &= ~(GREEN_LED | RED_LED);              // Turn off GREEN LED
+                          ~~ ^~~~~~~~~~~~~~~~~~~~~~
+uVision_Keil_Project_09.c(186): warning: no previous prototype for function 'HandleEmergencyStop' [-Wmissing-prototypes]
+void HandleEmergencyStop() {
+     ^
+uVision_Keil_Project_09.c(70): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void HandleEmergencyStop();
+     ^
+                         void
+uVision_Keil_Project_09.c(208): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIO_PORTC_DATA_R &= ~RED_LED;
+                      ~~ ^~~~~~~~
+uVision_Keil_Project_09.c(205): warning: no previous prototype for function 'Motor_On' [-Wmissing-prototypes]
+void Motor_On() {
+     ^
+uVision_Keil_Project_09.c(68): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void Motor_On();
+     ^
+              void
+uVision_Keil_Project_09.c(216): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIO_PORTD_DATA_R &= ~MOTOR_PUL;
+                      ~~ ^~~~~~~~~~
+uVision_Keil_Project_09.c(218): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIO_PORTC_DATA_R &= ~GREEN_LED;
+                      ~~ ^~~~~~~~~~
+uVision_Keil_Project_09.c(214): warning: no previous prototype for function 'Motor_Off' [-Wmissing-prototypes]
+void Motor_Off() {
+     ^
+uVision_Keil_Project_09.c(69): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void Motor_Off();
+     ^
+               void
+uVision_Keil_Project_09.c(227): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIO_PORTD_DATA_R &= ~MOTOR_PUL;
+                      ~~ ^~~~~~~~~~
+uVision_Keil_Project_09.c(224): warning: no previous prototype for function 'Stepper_Step' [-Wmissing-prototypes]
+void Stepper_Step() {
+     ^
+uVision_Keil_Project_09.c(67): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void Stepper_Step();
+     ^
+                  void
+uVision_Keil_Project_09.c(233): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIO_PORTB_DATA_R &= ~LCD_EN;
+                      ~~ ^~~~~~~
+uVision_Keil_Project_09.c(230): warning: no previous prototype for function 'LCD_EnablePulse' [-Wmissing-prototypes]
+void LCD_EnablePulse() {
+     ^
+uVision_Keil_Project_09.c(230): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void LCD_EnablePulse() {
+^
+static 
+uVision_Keil_Project_09.c(238): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIO_PORTB_DATA_R &= ~(LCD_D4 | LCD_D5 | LCD_D6 | LCD_D7);
+                      ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+uVision_Keil_Project_09.c(237): warning: no previous prototype for function 'LCD_Send4Bit' [-Wmissing-prototypes]
+void LCD_Send4Bit(uint8_t data) {
+     ^
+uVision_Keil_Project_09.c(237): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void LCD_Send4Bit(uint8_t data) {
+^
+static 
+uVision_Keil_Project_09.c(247): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIO_PORTB_DATA_R &= ~LCD_RS;
+                      ~~ ^~~~~~~
+uVision_Keil_Project_09.c(260): warning: no previous prototype for function 'LCD_Init' [-Wmissing-prototypes]
+void LCD_Init() {
+     ^
+uVision_Keil_Project_09.c(60): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void LCD_Init();
+     ^
+              void
+uVision_Keil_Project_09.c(295): warning: no previous prototype for function 'LCD_UpdateCounts' [-Wmissing-prototypes]
+void LCD_UpdateCounts() {
+     ^
+uVision_Keil_Project_09.c(65): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void LCD_UpdateCounts();
+     ^
+                      void
+36 warnings generated.
+assembling startup_TM4C123.s...
+compiling system_TM4C123.c...
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(13): warning: In file included from...
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/pc/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+44 warnings generated.
+linking...
+Program Size: Code=2368 RO-data=636 RW-data=0 ZI-data=632  
+".\Objects\uVision_Keil_Project_09.axf" - 0 Error(s), 80 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_TM4C123GH6PM
+  C:\Users\pc\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\pc\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device\Source\system_TM4C123.c
+      Include file:  Device\Include\TM4C123\TM4C123.h
+      Source file:   Device\Source\ARM\startup_TM4C123.s
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
