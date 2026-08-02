@@ -134,7 +134,7 @@ uVision_Keil_Project_09_B/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/NextGenMechTEch/nextgen-mechtech-academy.git
+   git clone https://github.com/andreyas-dev/Automated_Object_Sorting_Conveyor_System.git
    cd uVision_Keil_Project
    ```
 2. **Open the project**
